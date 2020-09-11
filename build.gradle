@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'commons-io', name: 'commons-io', version: '2.0.1'
+    implementation group: 'net.lingala.zip4j', name: 'zip4j', version: '1.3.2'
+    implementation group: 'org.openpreservation.jhove', name: 'jhove', version: '1.24.2', ext: 'pom'
+    implementation group: 'org.openpreservation.jhove', name: 'jhove-core', version: '1.24.2'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'utf8-hul', version: '1.7.1'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'aiff-hul', version: '1.6.1'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'pdf-hul', version: '1.12.2'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'ascii-hul', version: '1.4.1'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'tiff-hul', version: '1.9.2'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'xml-hul', version: '1.5.1'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'wave-hul', version: '1.8.1'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'html-hul', version: '1.4.1'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'jpeg-hul', version: '1.5.2'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'jpeg2000-hul', version: '1.4.2'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'gif-hul', version: '1.4.2'
+    implementation group: 'org.openpreservation.jhove.modules', name: 'jhove-modules', version: '1.24.2', ext: 'pom'
+    implementation group: 'org.openpreservation.jhove', name: 'jhove-ext-modules', version: '1.24.2'
+    implementation group: 'com.exlibris', name: 'dps-sdk', version: '4.2.1'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+test {
+    environment "digitool.home", "/home/leefr/plugins/TestMDExtractor/"
+}

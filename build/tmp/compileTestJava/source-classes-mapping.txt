@@ -1,0 +1,6 @@
+com/exlibris/rosetta/repository/plugin/mdExtractor/base/AbstractNLNZMDExtractorPluginTest.java
+ com.exlibris.rosetta.repository.plugin.mdExtractor.base.AbstractNLNZMDExtractorPluginTest
+com/exlibris/rosetta/repository/plugin/mdExtractor/jpeg/JPEGHULMDExtractorPluginTest.java
+ com.exlibris.rosetta.repository.plugin.mdExtractor.jpeg.JPEGHULMDExtractorPluginTest
+com/exlibris/rosetta/repository/plugin/mdExtractor/warc/WARCKBMDExtractorPluginTest.java
+ com.exlibris.rosetta.repository.plugin.mdExtractor.warc.WARCKBMDExtractorPluginTest
